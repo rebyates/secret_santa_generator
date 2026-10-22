@@ -68,4 +68,4 @@ if st.button("Reveal") and entered.strip():
         st.error("That name isn't on the list. Check the spelling and try again.")
     else:
         st.success(f"Hi {name}! You're buying a gift for **{pairs[name]}** 🎁")
-        st.caption("Keep it secret! Clear the box before passing your phone on.")
+        st.caption("Keep it secret!")
