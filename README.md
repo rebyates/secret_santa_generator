@@ -4,13 +4,17 @@ A quick streamlit app for randomly allocating names in a group for Secret Santa.
 ## How it works
 
 1. Put everyone's names in `names.txt`, one per line.
-2. Set a secret `draw_seed` (any text you like, e.g. `"santa-2026-xyz"`).
+2. Optionally list couples in `partners.txt`, one couple per line separated
+   by a comma (e.g. `Hollie, Sam`). Partners won't be allocated each other.
+   A line can hold more than two names (e.g. a household) and none of them
+   will buy for each other.
+3. Set a secret `draw_seed` (any text you like, e.g. `"santa-2026-xyz"`).
    The seed fixes the draw, so everyone sees the same allocation every time
    they open the app. Changing the seed re-draws everyone.
-3. Each person opens the app, types their name and taps **Reveal** to see
+4. Each person opens the app, types their name and taps **Reveal** to see
    only who they're buying for.
 
-Nobody gets themselves, and every name is allocated exactly once.
+Nobody gets themselves or their partner, and every name is allocated exactly once.
 
 ## Running locally
 
